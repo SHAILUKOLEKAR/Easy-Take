@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_billing"
+            android:icon="@drawable/doller_icon"
+            android:title="@string/admin_Billing" />
+        <item
+            android:id="@+id/nav_kitchen"
+            android:icon="@drawable/knife_spoon_icon"
+            android:title="@string/admin_kitchen" />
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/menu_icon"
+            android:title="@string/menu" />
+        <item
+            android:id="@+id/nav_admin_history"
+            android:icon="@drawable/history_icon"
+            android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_admin_settings"
+            android:icon="@drawable/setting_icon"
+            android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/lock_open_icon"
+            android:title="@string/menu_logout" />
+    </group>
+
+</menu>

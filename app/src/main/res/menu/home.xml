@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search_icon"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:title="scan"
+        android:id="@+id/scan_qr"
+        app:showAsAction="always"
+        android:icon="@drawable/scan_icon"/>
+    <item
+        android:id="@+id/find_hotels_by_location"
+        android:title="@string/find_hotel"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_location_on_24"/>
+
+</menu>

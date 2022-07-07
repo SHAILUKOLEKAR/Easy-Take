@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".join_now_Activity"
+    android:background="@drawable/food4"
+    android:theme="@style/AppTheme1"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="158dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/login_applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image"
+            android:src="@drawable/blogoa12"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.54" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/easy_take"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/login_applogo"
+            app:layout_constraintEnd_toEndOf="@+id/login_applogo"
+            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintStart_toStartOf="@+id/login_applogo"
+            app:layout_constraintTop_toBottomOf="@+id/login_applogo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="25dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="25dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="100dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/join_now_phoneno_input1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/mo_no"
+            app:hintEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:endIconMode="clear_text"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:boxStrokeColor="#D50000"
+            app:startIconTint="@android:color/black"
+            app:startIconDrawable="@drawable/phone_number_icon"
+            app:layout_constraintBottom_toTopOf="@+id/send_otp_btn"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_chainStyle="packed"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/join_now_phoneno_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/send_otp_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/join_now_phoneno_input1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/blue_button_backgrnd"
+            android:drawableStart="@drawable/phone_mark"
+            android:drawableLeft="@drawable/phone_mark"
+            android:padding="10dp"
+            android:text="@string/send_otp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/join_now_username_input"
+            app:layout_constraintEnd_toEndOf="@+id/join_now_phoneno_input1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/join_now_phoneno_input1"
+            app:layout_constraintTop_toBottomOf="@+id/join_now_phoneno_input1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/User_Verification_No1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/enter_otp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxStrokeColor="#D50000"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:hintTextColor="@android:color/black"
+            android:visibility="invisible"
+            app:startIconTint="@android:color/black"
+            app:startIconDrawable="@drawable/message_icon"
+            app:layout_constraintEnd_toEndOf="@+id/join_now_phoneno_input1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/join_now_phoneno_input1"
+            app:layout_constraintTop_toTopOf="@+id/send_otp_btn"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/User_Verification_No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/join_now_username_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="invisible"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/join_now_password_input"
+            app:layout_constraintEnd_toEndOf="@+id/send_otp_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/send_otp_btn"
+            app:layout_constraintTop_toBottomOf="@+id/send_otp_btn"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:boxStrokeColor="#D50000"
+            app:startIconTint="@android:color/black"
+            app:hintTextColor="@android:color/black"
+            app:startIconDrawable="@drawable/person_identity_icon"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/join_now_username_input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/join_now_password_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass"
+            android:visibility="invisible"
+            app:counterTextColor="@android:color/black"
+            app:endIconMode="password_toggle"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxBackgroundColor="@color/colorAccent"
+            app:boxStrokeColor="#D50000"
+            app:startIconTint="@android:color/black"
+            app:hintTextColor="@android:color/black"
+            app:startIconDrawable="@drawable/lock_close_icon"
+            app:layout_constraintBottom_toTopOf="@+id/join_now_btn"
+            app:layout_constraintEnd_toEndOf="@+id/join_now_username_input"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/join_now_username_input"
+            app:layout_constraintTop_toBottomOf="@+id/join_now_username_input"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/join_now_password_input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/join_now_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/blue_button_backgrnd"
+            android:drawableStart="@drawable/join_person_icon"
+            android:drawableLeft="@drawable/join_person_icon"
+            android:padding="10dp"
+            android:text="@string/creat_ac"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/join_now_password_input"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/join_now_password_input"
+            app:layout_constraintTop_toBottomOf="@+id/join_now_password_input" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+	<dimen name="bottom_margin">6dp</dimen>
+	<dimen name="text_size">42sp</dimen>
+	<dimen name="logo_height">156dp</dimen>
+	<dimen name="text_size13">16.8sp</dimen>
+</resources>

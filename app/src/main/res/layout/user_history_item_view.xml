@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    app:cardBackgroundColor="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#FFFAFF" />
+        <TextView
+            android:id="@+id/hotel_name_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/hotel_name"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/date_hidtory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/time"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:text="@string/Rs" />
+
+            <TextView
+                android:id="@+id/total_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/total"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

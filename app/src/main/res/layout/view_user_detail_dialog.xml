@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#B2DFDB"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FF0000FF" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/user_profile_for_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <TextView
+        android:id="@+id/user_name_for_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textSize="21sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#D50000" />
+    <TextView
+        android:id="@+id/user_mono_for_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mo_no"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/phone_number_icon"
+        android:textColor="@android:color/black" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#D50000" />
+    <TextView
+        android:id="@+id/user_total_for_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/money_black_logo"
+        android:textColor="@android:color/black" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#D50000" />
+    <Button
+        android:id="@+id/done_btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/blue_button_backgrnd"
+        android:text="@string/done"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FF0000FF"
+        android:layout_marginBottom="5dp"/>
+
+
+</LinearLayout>

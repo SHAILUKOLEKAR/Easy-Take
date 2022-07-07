@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273298361136",
+    "firebase_url": "https://easy-take-87371.firebaseio.com",
+    "project_id": "easy-take-87371",
+    "storage_bucket": "easy-take-87371.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273298361136:android:4cd8ad49878e10abaed6f5",
+        "android_client_info": {
+          "package_name": "com.shailu.eteasytake"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273298361136-5apu773ig8fevtss3s2u8ijiod8r5daj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shailu.eteasytake",
+            "certificate_hash": "9f4795d2e136628b115c9c31bb2f0952a368c76d"
+          }
+        },
+        {
+          "client_id": "273298361136-un3hrj5h2jnlrphldgdmri8a92ahdnt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNwbUuqpNA3SPei_Q16I8JaS7swUFR2Co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273298361136-un3hrj5h2jnlrphldgdmri8a92ahdnt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

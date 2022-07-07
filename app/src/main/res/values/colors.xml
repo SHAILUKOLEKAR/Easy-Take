@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorAccent">#FCA020</color>
+    <color name="wrdcolor">#AB11EB1B</color>
+    <color name="blue">#1053A3</color>
+    <color name="dialog">#E9E980B5</color>
+    <color name="toolbarclr">#1565C0</color>
+    <color name="text_backgrnd">#C8FFEA00</color>
+    <color name="tester">#2962FF</color>
+</resources>
